@@ -7,7 +7,7 @@ import { Link, NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
-        <ul>
+        <ul class="list">
             <li>
                 <NavLink to="/" className={({isActive})=>isActive? "active-link":""}>Home</NavLink>
             </li>
