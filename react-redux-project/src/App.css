@@ -1,0 +1,94 @@
+/* App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+  background-color: #2196F3; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b7dda; /* Darker blue on hover */
+  box-shadow: 0 0 10px 2px rgba(33, 150, 243, 0.75); /* Glowing blue border */
+}
+
+button:active {
+  background-color: #065ea7; /* Even darker blue when clicked */
+  transform: scale(0.95);
+}
+
+.count-display {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+p {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  font-size: 24px; /* Make the text larger */
+  font-weight: 600; /* Semi-bold text */
+  color: #333; /* Dark text color in light mode */
+  margin: 0;
+  padding: 10px;
+}
+
+/* Change count color in dark mode */
+.dark-theme p {
+  color: white; /* White text color in dark mode */
+}
+
+.label {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.theme-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #333;
+}
+
+.theme-button:hover {
+  color: #2196F3; /* Blue color on hover */
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+.light-theme {
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.dark-theme .theme-button {
+  color: yellow; /* Sun icon color in dark theme */
+}
+
+.light-theme .theme-button {
+  color: #333; /* Moon icon color in light theme */
+}
